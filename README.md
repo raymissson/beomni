@@ -37,3 +37,9 @@ Após o clone será baixado (back-end e o front-end), para que cada sistema func
 ## Execução
 
 Para que cada sistema funcione, será necessário executar o comando "npm start", cada um em sua respectiva pasta, em seu respectivo terminal, pois eles funcionam em portas diferentes.
+
+# Tecnologias
+
+- Utilizei Node.js para construir a API (back-end)
+- Utilizei React.js para construir o front-end
+- Utilizei SQLite para armazenar os dados
