@@ -1,0 +1,21 @@
+Questões
+
+1. A solução deve ser disponibilizada em Cloud ou On-premise?
+
+- Inicialmente acredito que seria melhor em Cloud, pois pouparia esforços de um departamento em questão de infraestrutura, ao longo do tempo poderia verificar a necessidade de continuar ou não com Cloud, qual seria o melhor custo benefício.
+
+2. Considerando a participação de 4 pessoas técnicas para o desenvolvimento dessa solução, responda qual ferramenta acreditas ser apropriada para o controle de tarefas da equipe, a ferramenta é ágil?
+
+- Baseado no que utilizo, usaria o Trello, é uma ferramenta popular, eu ainda não utilizei outras ferramentas ou participei de grandes equipes, mas durante meu percurso ela me serviu muito pra coordenar todas as tarefas.
+
+3. Você se sente capaz de liderar esta equipe? Por quê?
+
+- Ainda não coordenei nenhuma equipe, mas se fosse pra aprender eu aceitaria o desafio e pediria ajuda dos meus superiores, tenho certeza que não me negariam ajuda.
+
+4. Se pudesse sugerir uma melhoria, mudança ou oportunidade. O que seria?
+
+- Acredito que essa seja a oportunidade perfeita para integrar todas as equipes das Lojas Bemol, umas vez que essa solução é para todos os meios de comunicação.
+
+5. Acha válido esse desafio para o processo que está participando?
+
+- Esse foi um verdadeiro desafio, ainda não tinha feito algo do tipo, me fez repensar vários fatores, e tem o negócio de trabalhar sozinho, é mais árduo, eu preferia que fosse em equipe, pois outras pessoas dariam soluções diferentes, ou agregar na ideia, mas acho válido todo o teste, me fez trabalhar por várias horas seguidas com o que eu gosto.
