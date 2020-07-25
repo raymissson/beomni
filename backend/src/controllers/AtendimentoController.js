@@ -22,7 +22,7 @@ module.exports ={
 
         const [id] = await connection('atendimentos').insert({
             descricao,
-            cliente_cpf,
+            cliente_cpf
         });
 
         return response.json({ id });

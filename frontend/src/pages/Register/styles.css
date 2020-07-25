@@ -50,6 +50,21 @@
     display: flex;
 }
 
+.register-container .content form .input-group button {
+    height: 60px;
+    width: 60px;
+    border-radius: 4px;
+    border: 1px solid #dcdce6;
+    background: transparent;
+    margin-left: 16px;
+    transition: border-color 0.2s;
+    margin-top: 8px;
+}
+
+.register-container .content form .input-group button:hover {
+    border-color: #999;
+}
+
 .register-container .content form .input-group input + input {
     margin-left: 8px;
 }

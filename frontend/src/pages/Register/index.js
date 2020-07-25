@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useHistory } from 'react-router-dom';
 import { FiArrowDownLeft } from 'react-icons/fi';
-
+import axios from 'axios';
 import api from '../../services/api';
-
 import './styles.css';
 import logoImg from '../../assets/logo.png';
 
@@ -17,8 +16,27 @@ export default function Register(){
     const [cidade, setCidade] = useState('');
     const [uf, setUf] = useState('');
 
+    const history = useHistory();
+
+    useEffect(() =>{
+        axios.get(`https://viacep.com.br/ws/${cep}/json/`)
+        .then(response =>{
+            try {
+                setRua(response.data.logradouro);
+                setBairro(response.data.bairro);
+                setCidade(response.data.localidade);
+                setUf(response.data.uf);
+                alert('Cep encontrado');
+            } catch (err) {
+                alert('cep inválido');
+            }
+        })
+    }, [cep]);
+
     async function handleRegister(e){
         e.preventDefault();
+
+        
         const data = {
             cpf,
             nome,
@@ -33,6 +51,7 @@ export default function Register(){
         try{
             const response = await api.post('clientes', data);
             alert(`Sua conta foi criada com sucesso, login: ${response.data.cpf}`);
+            history.push('/');
         } catch(err){
             alert('Erro no cadastro, tente novamente');
         }
@@ -53,50 +72,63 @@ export default function Register(){
                 </section>
                 <form onSubmit={handleRegister}>
                     <input 
+                        required
                         placeholder="Nome"
                         value={nome}
                         onChange={e => setNome(e.target.value)}
                         />
                     <input
+                        required
                         placeholder="CPF"
                         value={cpf}
                         onChange={e => setCpf(e.target.value)}
                         />
                     <input type="email" 
+                        required
                         placeholder="E-mail"
                         value={email}
                         onChange={e => setEmail(e.target.value)}
                         />
                     <input 
-                        placeholder="CEP" 
-                        value={cep}
-                        onChange={e => setCep(e.target.value)}
+                            required
+                            placeholder="CEP"
+                            id="cep" 
+                            value={cep}
+                            onChange={e => setCep(e.target.value)}
                         />
                     <div className="input-group">
                         <input 
+                        required
                             placeholder="Rua"
+                            id="rua"
                             value={rua}
                             onChange={e => setRua(e.target.value)}
                             />
                         <input 
+                        required
                             placeholder="Bairro" 
+                            id="bairro"
                             value={bairro}
                             onChange={e => setBairro(e.target.value)}
                             />
                     </div>
                     <div className="input-group">
                         <input 
+                        required
                             placeholder="Cidade"
+                            id="cidade"
                             value={cidade}
                             onChange={e => setCidade(e.target.value)}
                             />
                         <input 
+                        required
                             placeholder="UF" 
+                            id="uf"
                             value={uf}
                             onChange={e => setUf(e.target.value)}
                             style={{ width: 80 }} />
                     </div>
-
+                    
                     <button className="button" type="submit">Cadastrar</button>
                 </form>
             </div>
