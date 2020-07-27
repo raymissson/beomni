@@ -7,7 +7,7 @@ Desafio proposto pela **Bemol Digital** afim de unificar a experiência de seus 
 
 # Qual a ideia da plataforma?
 
-Criei uma API que pode ser consumida a partir de qualquer front-end (Reatc, Angular, Vue) em que é feito a requisição das informações de clientes a partir de seu CPF, o cliente se cadastra na e tem os seus dados disponíveis para os colaboradores consultarem, crie de forma lúdica um Cadastro, em seguida o cliente pode se logar usando seu CPF e verificar o histórico de atendimentos, mas só pra questão de visualização mesmo, porque essa seria a ideia central da plataforma, obter os dados a partir de qualquer meio somente consultando o CPF.
+Criei uma API que pode ser consumida a partir de qualquer front-end (Reatc, Angular, Vue) em que é feito a requisição das informações de clientes a partir de seu CPF, o cliente se cadastra e tem os seus dados disponíveis para os colaboradores consultarem, crie de forma lúdica um Cadastro, em seguida o cliente pode se logar usando seu CPF e verificar o histórico de atendimentos, mas só pra questão de visualização mesmo, porque essa seria a ideia central da plataforma, obter os dados a partir de qualquer meio somente consultando o CPF.
 
 # Pastas
 
