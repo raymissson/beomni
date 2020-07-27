@@ -5,6 +5,10 @@ Desafio proposto pela **Bemol Digital** afim de unificar a experiência de seus 
 - Continuar interação a partir de qualquer canal, ou seja uma interação iniciada no canal A deve ser continuada de maneira fluida no canal B;
 - Receber mensagem no canal aberto pelo usuário, mesmo que nenhuma interação tenha sido realizada por ele neste canal.
 
+# Qual a ideia da plataforma?
+
+Criei uma API que pode ser consumida a partir de qualquer front-end (Reatc, Angular, Vue) em que é feito a requisição das informações de clientes a partir de seu CPF, o cliente se cadastra na e tem os seus dados disponíveis para os colaboradores consultarem, crie de forma lúdica um Cadastro, em seguida o cliente pode se logar usando seu CPF e verificar o histórico de atendimentos, mas só pra questão de visualização mesmo, porque essa seria a ideia central da plataforma, obter os dados a partir de qualquer meio somente consultando o CPF.
+
 # Pastas
 
 A seguir vou definir como os arquivos foram definidos.
